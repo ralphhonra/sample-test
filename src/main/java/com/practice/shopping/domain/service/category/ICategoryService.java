@@ -11,4 +11,18 @@ public interface ICategoryService {
     Category addCategory(Category category);
     Category updateCategory(Category category, Long id);
     void deleteCategoryById(Long id);
+
+    Category getCategoryById2(Long id);
+    Category getCategoryByName2(String name);
+    List<Category> getAllCategories2();
+    Category addCategory2(Category category);
+    Category updateCategory2(Category category, Long id);
+    void deleteCategoryById2(Long id);
+
+    Category getCategoryById3(Long id);
+    Category getCategoryByName3(String name);
+    List<Category> getAllCategories3();
+    Category addCategory3(Category category);
+    Category updateCategory3(Category category, Long id);
+    void deleteCategoryById3(Long id);
 }

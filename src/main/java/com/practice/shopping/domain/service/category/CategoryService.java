@@ -58,4 +58,64 @@ public class CategoryService implements ICategoryService {
                         () -> { throw new ResourceNotFoundException("Category not found!"); }
                 );
     }
+
+    @Override
+    public Category getCategoryById2(Long id) {
+        return null;
+    }
+
+    @Override
+    public Category getCategoryByName2(String name) {
+        return null;
+    }
+
+    @Override
+    public List<Category> getAllCategories2() {
+        return List.of();
+    }
+
+    @Override
+    public Category addCategory2(Category category) {
+        return null;
+    }
+
+    @Override
+    public Category updateCategory2(Category category, Long id) {
+        return null;
+    }
+
+    @Override
+    public void deleteCategoryById2(Long id) {
+
+    }
+
+    @Override
+    public Category getCategoryById3(Long id) {
+        return null;
+    }
+
+    @Override
+    public Category getCategoryByName3(String name) {
+        return null;
+    }
+
+    @Override
+    public List<Category> getAllCategories3() {
+        return List.of();
+    }
+
+    @Override
+    public Category addCategory3(Category category) {
+        return null;
+    }
+
+    @Override
+    public Category updateCategory3(Category category, Long id) {
+        return null;
+    }
+
+    @Override
+    public void deleteCategoryById3(Long id) {
+
+    }
 }

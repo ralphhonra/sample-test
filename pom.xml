@@ -68,12 +68,36 @@
 			<version>2.4.4</version>
 		</dependency>
 
+
+
+		<!-- https://mvnrepository.com/artifact/dev.snappay/snappay-sdk -->
+		<dependency>
+			<groupId>dev.snappay</groupId>
+			<artifactId>snappay-sdk</artifactId>
+			<version>0.0.1-beta</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-core</artifactId>
+			<version>1.3</version> <!-- Older versions might have vulnerabilities -->
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Example of a vulnerable Jackson Databind version often used in web apps -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.0</version> <!-- Known vulnerabilities in older versions like this -->
+			<scope>test</scope> <!-- If used in test utilities or mocks -->
+		</dependency>
+
 		<dependency>
 			<groupId>org.yaml</groupId>
 			<artifactId>snakeyaml</artifactId>
-			<version>1.30</version>
+			<version>2.2</version>
 			<scope>test</scope>
 		</dependency>
+
 
 
 	</dependencies>
