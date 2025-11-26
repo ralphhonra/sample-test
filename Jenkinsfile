@@ -31,9 +31,12 @@ pipeline {
                     string(credentialsId: 'GITLAB_TOKEN', variable: 'GITLAB_TOKEN'),
                     string(credentialsId: 'OPENAI_API_KEY', variable: 'OPENAI_API_KEY')
                 ]) {
-                    // 4. Run the engine!
-                    // It will automatically detect it's running inside "MyWebApp"
-                    sh 'python -m src.main'
+                    withEnv([
+                        "PR_NUMBER=${env.CHANGE_ID}",
+                        "GITHUB_REPOSITORY=ralphhonra/sample-test"
+                    ]) {
+                        sh 'python -m src.main'
+                    }
                 }
             }
         }
